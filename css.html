@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>CSS with PK and UHK</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a href="#">
+      <img class="btn" style="width:4rem;" src="images/arrow.png" alt="">
+      </a> 
+    <h1 class="mainhead">Learning CSS to Build a Website</h1>
+    <marquee class="marquee" behavior="" direction="right">
+      <pre class="seminavtext">
+*CSS with Harsha Karthik Uppala*                                       *CSS with Harsha Karthik Uppala*                                         *CSS with Harsha Karthik Uppala*</pre
+      >
+    </marquee><br><br>
+    <div class="seminav">
+      <a class="snavelem" href="#procss">Providing CSS</a>
+      <a class="snavelem" href="#normcss">Normalizing CSS</a>
+      <a class="snavelem" href="#selecss">Selectors</a>
+      <a class="snavelem" href="#spec">Specificity</a>
+      <a class="snavelem" href="#color">Colors</a>
+      <a class="snavelem" href="#gradient">Gradients</a>
+      <a class="snavelem" href="#containerlast">CSS Forms etc.</a>
+    </div>
+    <br>
+    <br>
+    <div class="procsss" >
+    <h2 id="procss">Providing CSS</h2>
+    <p>There are three ways to provide CSS to our HTML file.</p>
+   <ol class="procssli"><li>Internal CSS</li>
+   <li>External CSS</li>
+   <li>In Line CSS</li></ol>
+   <p><b>Internal CSS</b>: Styling CSS in the html file itself is called internal css</p>
+   <p><b>External CSS</b>: Styling CSS in an external file and linking it with HTML file is called External CSS[this is most recomended method]</p>
+   <p><b>In Line CSS</b>: Styling CSS in the line of an element is called IN Line CSS.</p>
+  </div><br>
+  <div class="normcsss">
+    <h2 id="normcss">Normalizing CSS</h2>
+    <p>It is important to normalize our CSS file,Because different search engines display our styling differently.</p>
+    <p><a href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">Normalize from here</a></p>
+  </div><br>
+  <div class="selecsss" >
+    <h2 id="selecss">Selectors</h2>
+    <p>Selecting elements with their respective <ol class="selecssli"><li><b>Type</b>: by the type of body.</li>
+    <li><b>ID</b>: by the id we declared.</li>
+    <li><b>Class</b>: by the Class we declared.</li>
+    <li><b>Attribute</b>: by the Attributes like href , src ,etc..</li></ol></p>
+  </div>
+  <br>
+  <div class="speccs">
+    <h2 id="spec">Specificity</h2>
+    <p>If we give multiple inputs or styling for only one element,The <b>Specificity</b> come into play</p>
+    <p>If we style an element by its Id and with the class,The style we given for Id gets applied.</p>
+    <br>
+    <figure>
+      <img class="simg" src="images/selcspef.png" alt="Specificity triangle">
+      <figcaption>Specificity Triangle</figcaption>
+    </figure>
+  </div><br>
+  
+    <div class="colorcs">
+      <h2  id="color">Colors</h2>
+      <p>There are four ways to use colors in CSS</p>
+      <b>
+      <ol class="orderli">
+        <li>RGB</li>
+        <li>HSL</li>
+        <li>Named Colors</li>
+        <li>HexaDecimal</li>
+      </ol>
+    </b><br>
+    <p>Use <b>rgba</b> tag to set specific color along with opacity of it.</p><br>
+    <p>for example:</p>
+    <p><b> rgba(red, green, blue, alpha);</b> in this way</p>
+    <p>Here is a way to pick our colors from <a href="https://www.google.com/search?q=color+picker" target="__blank"><b>color picker</b></a> from google.</p>
+    </div>
+    <br>
+    <div class="gradientcs">
+      <h2 id="gradient">Gradients</h2>
+      <p>We have two types of gradient styles</p>
+      <ol class="orderli">
+        <li><b> Linear Gradient:</b>applies gardient normally from all directions</li>
+        <li><b> Radial Gradient:</b>applies gradient in form of shapes from all positions</li>
+      </ol>
+      <br>
+      <p>There is a best way to get <a href="https://cssgradient.io/" target="__blank"><b>Gradients</b></a> with the code</p>
+    </div><br>
+    <div class="Layout">
+      <h2 id="layoutid">Layouts</h2><br>
+      <p>Topics to be covered here</p>
+      <ol class="orderli"><b>
+        <li>Box Model</li>
+        <li>Sizing Elements</li>
+        <li>OverFlowing</li>
+        <li>Measurement Units</li>
+        <li>Positioning</li>
+        <li>Floating Elements</li>
+        <li>Flex Box and Grid Layouts</li>
+        <li>Media Queries</li></b>
+      </ol><br>
+       <h3><p>Box Model</p></h3>
+      <p>Here is the clear structure of a box model in css</p><br>
+      <img class="descimg" src="images/box model.png" alt="box model diagram"><br><br>
+      <p>Note:never use padding property for spacing,instead use margin</p><br><hr><br>
+      <b><h3>Sizing Elements</h3></b>
+      <p>While sizing elements in CSS,If we apply padding, it changes the size of the elements.</p>
+      <p>To get rid of this we use <b>BoxSizing:Border-box;</b></p>
+      <p>Changing inline elements to block level elements and vice versa.Also making both properties apply to an element</p>
+      <p>here those tags.</p>
+      <p><b>Display:inline;</b></p>
+      <p><b>Display:block;</b></p> 
+      <p><b>Display:inline-block;</b></p><br><hr><br>
+      <h3>Over Flowing</h3>
+      <p>When the content in an element is OverFlowing use <b>overflow:auto;</b> and hide them under it and access by scrollling</p>
+      <p>just like below</p>
+      <div class="overflow">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit maxime hic odio incidunt qui ab quam eaque dignissimos tempore neque illum, distinctio laudantium doloremque iste iure esse, consequuntur animi reprehenderit sed, natus voluptatum aspernatur? Quidem commodi saepe ut reprehenderit similique, ratione dolor quibusdam? Aspernatur ipsam aperiam aut labore obcaecati vel culpa omnis nemo qui quo, tempore at deleniti nulla neque! Facere autem magnam asperiores est laboriosam corrupti aperiam, id iure? Iure ratione minus recusandae? Molestiae aut vel impedit! Ratione, dolorem! Voluptate ducimus voluptatem, impedit officiis non corporis ut? Necessitatibus quibusdam voluptatum et, asperiores, voluptatibus veritatis vero voluptate eos maxime eius adipisci nobis dignissimos aspernatur temporibus ipsa natus repellat sint in minus velit hic dolore tenetur quae nisi. Corporis dolorum minima quam, sequi perferendis accusantium nesciunt. Dolore maiores quos magnam autem voluptatibus repudiandae delectus quod beatae distinctio illum et repellat exercitationem placeat tempore officiis cupiditate tenetur sit veritatis voluptatum deserunt, aliquid rem impedit. Cupiditate dolorem, eligendi nemo consequuntur id consectetur quae sequi dolore, veniam atque repudiandae. Vero quasi iusto velit quo quaerat maiores dolorem accusantium blanditiis minima sapiente praesentium perspiciatis unde consectetur ratione atque deleniti sint, quod animi voluptatem amet dolor reiciendis! Cupiditate iure, maiores blanditiis repudiandae dicta quidem! Neque, deleniti.</p>
+      </div>
+        <br><hr><br><h3>Floating Elements</h3>
+        <p>when we use property called <b>float</b> the element starts floating from its content box,and the content in it alings automatically next to float.</p>
+        <p>just like below</p><br>
+        <article class="floatex">
+          <div class="floatexavtr"><p style="color:white; position:relative; top: 1rem; left: 0.4rem; position: flex; flex-direction: row; justify-content: center; font-size: 90%;">Floating element</p></div>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, maxime eaque laborum dignissimos corporis vel cum nihil eos magni recusandae tempora molestiae alias impedit iste nesciunt reprehenderit, dolorem sint perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quas rerum iusto quam, ducimus ratione dolor reprehenderit culpa nemo maxime!</p>
+        </article>
+        <br><p>to get the text below the floating element use <b>clear</b></p><br><hr><br>
+        <h3>Flex</h3>
+        <p>Display:flex; is used instead of <b>float</b></p>
+        <p><b>flex-direction:row/column/row-reverse/column-reverse</b></p>
+        <br><p><b>Axes</b></p>
+        <img class="simg" src="images/axesimg.png" alt="image for axes">
+          <p><strong>Justify-content:</strong> is for main axis</p>
+          <p><strong>align-item:</strong> is for cross axis</p>
+          <p><strong>align-content:</strong> is for a group of elements</p>
+          <p><strong>align-self:</strong> is for a single element in cross axis</p>
+          <p><strong>justify-self:</strong> is for single element in main axis</p>
+          <br>
+          <p><b>flex-grow:</b> to grow an element according to the space in div</p>
+          <p><b>flex-shrink:</b> to shrink an element according to the space in div</p>
+          <p>all three properties in one function.<b>flex:grow, shrink, basis;</b></p>          
+    <br>
+    <hr>
+    <br>
+
+    <p>
+      <b>
+        Grid:
+      </b>
+    </p>
+    <br>
+    <p>grid-template-rows:no.of rows , size of row;</p>
+    <p>grid-template-column:no.of column , size of column;</p>
+    <p>Here is the shorthand Property for grid which contains both rows and columns</p>
+    <br>
+    <p><b>grid-template:repeat(no.of rows, size) / repeat(no.of columns, size);</b></p>
+    <br>
+    <p><b>Note:</b>repeat holds no.of rows or columns,size of them;</p>
+    <br>
+    <p><b>Aligning grid:</b></p>
+    <p>To align elements use the following </p>
+    <p>for items in grid use:</p>
+    <p>
+      <b>
+        align-items:___;
+      </b>
+    </p>
+    <p>
+      <b>
+        justify-items:___;
+      </b>
+    </p>
+    <br>
+    <p>for whole grid use</p>
+    <p>
+      <b>
+        align-content:___;
+      </b>
+    </p>
+    <p>
+      <b>
+      justify-content:___;
+      </b>
+    </p>
+    <br>
+    <div class="gridexample">
+      <div class=" griditem1"><p style="margin-top:4.2rem; font-size:large;">Header</p></div>
+      <div class=" griditem2"><p style="margin-top:4.2rem; color: white; font-size:large;">Sidebar</p></div>
+      <div class=" griditem3"><p style="margin-top:4.2rem; font-size:large;">Content</p></div>
+      <div class=" griditem4"><p style="margin-top:4.2rem; color: white; font-size:large;">Footer</p></div>
+    </div>
+    <br>
+    <p>
+     To give gap between rows use <b> row-gap:value;</b>
+     To give gap between column use <b> column-gap:value;</b>
+    </p>
+    <br>
+    <p>
+      to occupy an element in grid with specified space use <b>grid-row:start/end;</b> for row and <b>grid-column:start/end;</b> for column.
+    </p>
+  </div>
+  <br>
+  <div class="typography">
+    <h2>Typography</h2>
+    <h3>vertical spacing</h3>
+    <p>line-height:__;</p>
+    <p>horizantal spacing</p>
+    <p>letter-spacing:__;</p>
+    <p>word-spacing:__;</p>
+    <p>width:50ch; allows 50 charecters in a line</p>
+    <h3>Formating text</h3>
+    <p>text-align:</p>
+    <p>text-indent:</p>
+    <p>text-decoration:</p>
+    <p>text-transform:</p>
+    <p>text-overflow:__; if text overflows</p>
+    <p>column-count:__; to set column</p>
+    <p>column-gap:__;</p>
+    <p>column-rule:size style color;</p>
+  </div>
+  <br>
+  <div class="imagesincss">
+    <h2>Images</h2>
+    <h3>Background Images</h3>
+    <p>Background-image:url();</p>
+    <p>Background-repeat:___; to repeat an image or to prevent repeat.</p>
+    <p>Background-postion:___; to posiyion bgimage</p>
+    <p>Background-size:__; to size bgimage.</p>
+    <p>Background-attachment:__; to fix bgimage.</p>
+    <br>
+    <h3>Sprites</h3>
+    <p>to get best icons visit <a href="https://www.flaticon.com/">flaticon.com</a></p>
+    <br>
+    <h3>Clipping</h3>
+    <p>to clip an image use <a href="https://bennettfeely.com/clippy/">Clip from here.</a></p>
+    <br>
+    <h3>Filters</h3>
+    <p>to apply a filter to image use <b>filter:___;</b></p>
+    <p>here are filter properties <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">check out now!</a></p>
+    <br>
+    <h3>Supporting High Density screens</h3>
+    <p><b>srcset:"imagefor1xscreen.jpg 1x, imagefor2xscreen.jpg 2x, imagefor3xscreen.jpg 3x"</b></p>
+    <h2>Font Icons</h2>
+    <p>Best sites to get icons</p>
+    <ul>
+    <li>Font Awesome</li>
+    <li>Ionicons</li>
+    <li>Material Design icons</li>
+    </ul>
+  </div>
+  <br>
+  <div class="formsincss">
+    <h2>Forms</h2>
+    <h3>Creating forms</h3>
+    <p>To create a form use <b>form</b> tag</p>
+    <p>to insert a field <b>input</b> to add label for that field use <b>label</b>tag</p>
+    <p>to give buttons for the form use <b>button</b> tag and specify the type of it <b>reset</b> clears info entered in form</p>
+    <p><b>submit</b> button to submit the form</p>
+    <form class="firstform" action="">
+      <div class="form-group">
+        <label for="rollno">Roll no:</label>
+        <input id="rollno" type="text">
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input id="name" type="text">
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+      </div>
+    </form>
+    <h3>Styling Forms</h3>
+    <p>Margin between the field use <b>margin</b> by defining class for <b>both label and input</b></p>
+    <p>to style border use <b>border</b> property</p>
+    <p>use <b>type=["text"]</b> to specify a particular form</p>
+    <p>use <b>type=["text"]:Focus</b> to style elemnt when focused,<b>boxshadow:</b></p>
+    <p><b>Transition: what to change </b></p>
+    <p>to enlarge the field use <b>padding</b></p>
+    <p>to get rid of default border when focus use <b>outline:0;</b></p>
+    <p><b>Further forms topics to be covered in<a href="forms.html"><button>Forms</button></a></b></p>
+    <h2>Transformations</h2>
+    <ul>
+    <li>Skew(value in deg)</li>
+    <li>Rotate(value in deg)</li>
+    <li>Scale(value)</li>
+    <li>Translate(X axis value in rem/px,Y axis value in rem/px)</li>
+    </ul>
+    <h2>3D Transformations</h2>
+    <p> transform: perspective(value in px) transformation property();</p>
+    <p><b>Perspective(value in px)</b></p>
+    <p><b>transform-orign( x axis value,Y axis value)</b></p>
+    <h2>Transitions</h2>
+    <p>transition: transform 0.2s , leniar/ease-in/ease-out/cubic-bezier(.04,.98,.67,-0.93) delay in sec;</p>
+    <p><a href="https://cubic-bezier.com/#0,1.02,.05,-0.87">cubic-bezier</a></p>
+  </div>
+  <div class="containerlast" id="containerlast">
+    <div class="contentlast skew">
+      <a href="exercise.html">Exercise</a>
+    </div>
+    <div class="contentlast rotate">
+      <a href="forms.html">Forms</a>
+    </div>
+    <div class="contentlast scale">
+      <a href="transformations.html">Transformations</a>
+    </div>
+</div>
+  
+  </body>
+</html>

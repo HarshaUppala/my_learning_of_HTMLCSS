@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Transformations</title>
+</head>
+<style>
+    body{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+     .container{
+        width: 100vw;
+        height: 96.5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #f5f5f5;   
+    }
+    .content{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(73, 58, 73);
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #2e2626;
+        margin-left: 1rem;
+        color: white;
+    }
+    .content{
+        transition: transform 0.2s ;  
+    }
+    .transition{
+        transition:transform 0.2s  ease-in-out , background 0.7s ; 
+    }
+    .skew:hover{
+    transform: skew(15deg)
+    }
+    .rotate:hover{
+        transform: rotate(15deg);
+    }
+    .scale:hover{
+        transform: scale(1.5);
+        transition: transform 0.5s;
+    }
+    .translate:hover{
+        transform: translate(20px,14px);
+    }
+    .tdtransform:hover{
+        transform: perspective(200px) rotateY(20deg);
+        transform-origin: 0 50%;
+    }
+    .transition:hover{
+        transform: scale(1.5);
+        background-color: grey;
+    }
+
+    .customanimation:hover{
+        animation: ani 2s ease-in 1s ;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: small;
+    }
+
+    @keyframes ani {
+        0% {
+            transform: rotate(20deg);
+        }
+
+        25%{
+            transform: scale(2);
+        }
+
+        50%{
+            transform: scale(1);
+        }
+
+        75%{
+            transform: skew(15deg);
+        }
+
+        100%{
+            transform: translate(20px,14px) ;
+            background-color: grey;
+        }
+    }
+</style>
+<body>
+<div class="container">
+    <div class="content skew">
+      <p>Skew</p>
+    </div>
+    <div class="content rotate">
+      <p>Rotate</p> 
+    </div>
+    <div class="content scale">
+      <p>Scale</p>
+    </div>
+    <div class="content translate">
+      <p>Translate</p>  
+    </div>
+    <div class="content tdtransform">
+        <p>3d Transform</p>
+    </div>
+    <div class=" content transition">
+        <p>Transition</p>
+    </div>
+    <div class="content customanimation">
+        <p>Custom Animation</p>
+    </div>
+    <div class="content transition ">
+        <a href="otherpage.html">Exercise for Transformations</a>
+    </div>
+</div>
+</body>
+</html>
